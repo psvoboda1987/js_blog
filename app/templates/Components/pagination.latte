@@ -1,0 +1,18 @@
+{varType Nette\Utils\Paginator $paginator}
+<div class="pagination">
+    {if !$paginator->isFirst()}
+        <a n:href="default, 1">První</a>
+        <span>&nbsp;|&nbsp;</span>
+        <a n:href="default, ($paginator->getPage() -1)">Předchozí</a>
+        <span>&nbsp;|&nbsp;</span>
+    {/if}
+
+    <span>Stránka {$paginator->getPage()} z {$paginator->getPageCount()}</span>
+
+    {if !$paginator->isLast()}
+        <span>&nbsp;|&nbsp;</span>
+        <a n:href="default, ($paginator->getPage() + 1)">Další</a>
+        <span>&nbsp;|&nbsp;</span>
+        <a n:href="default, $paginator->getPageCount()">Poslední</a>
+    {/if}
+</div>

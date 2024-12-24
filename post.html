@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="blog webového vývojáře">
+    <meta name="author" content="Petr Svoboda">
+    <title>Blog | Petr Svoboda</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/milligram.css">
+    <link rel="stylesheet" href="css/basscss.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('article')
+        const converter = new showdown.Converter()
+        fetch(`pages/${title}/default.md`)
+            .then(data => data.text())
+            .then(data => document.getElementById('content').innerHTML = converter.makeHtml(data));
+    </script>
+
+    <div id="content"></div>
+</body>
+
+</html>

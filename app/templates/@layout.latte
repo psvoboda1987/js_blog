@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="blog webového vývojáře">
+        <meta name="author" content="Petr Svoboda">
+        <title>{ifset title}{include title|stripHtml} | {/ifset}Petr Svoboda</title>
+        <link rel="stylesheet" href="{$baseUrl}/css/milligram.css">
+        <link rel="stylesheet" href="{$baseUrl}/css/basscss.min.css">
+        <link rel="stylesheet" href="{$baseUrl}/css/blog.css">
+        <link rel="icon" type="image/png" href="{$baseUrl}/favicon.png">
+        <script src="{$baseUrl}/js/script.js" defer></script>
+    </head>
+
+    <body {if $user->isLoggedIn()}class="admin"{/if}>
+        <div n:foreach="$flashes as $flash" class="flash white {$flash->type} {$flash->type === 'error' ? bg-orange : bg-navy}">{$flash->message}</div>
+
+        {include content}
+
+        {include TEMPLATES_DIR . '/Layout/footer.latte'}
+
+        {block scripts}
+            {*<script src="https://nette.github.io/resources/js/3/netteForms.min.js"></script>*}
+        {/block}
+    </body>
+</html>

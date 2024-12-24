@@ -1,0 +1,14 @@
+<header class="center">
+    <ul class="list-style-none">
+        <li class="inline-block mr4"><a n:href="Homepage:about">O autorovi</a></li>
+        <li class="inline-block mr4"><a n:href="Homepage:default search => ''">Články</a></li>
+        {if $user->isLoggedIn()}
+            <li class="inline-block mr4">
+                <a n:href="Homepage:createPost" class="green">Vytvořit článek</a>
+            </li>
+            <li class="inline-block mr4">
+                <a n:href="Admin:logout" class="blue">Odhlásit</a>
+            </li>
+        {/if}
+    </ul>
+</header>

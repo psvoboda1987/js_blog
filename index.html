@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="blog webového vývojáře">
+    <meta name="author" content="Petr Svoboda">
+    <title>Blog | Petr Svoboda</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/milligram.css">
+    <link rel="stylesheet" href="css/basscss.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+        w3.getHttpObject("data/post.json", myFunction);
+
+        function myFunction(json) {
+            let data = json.at(-1).data
+            let postsListHtml = ''
+            // let limit = data.length
+            let limit = 10
+            for (let i = 0; i < limit; i++) {
+                const element = data[i];
+                // date_published
+                postsListHtml += `<li><a href="post.html?article=${element.link}">${element.title}</a></li>`
+            }
+
+            document.getElementById('content').innerHTML = postsListHtml
+        }
+    </script>
+    <ul id="content"></ul>
+</body>
+
+</html>

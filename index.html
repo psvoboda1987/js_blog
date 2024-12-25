@@ -9,30 +9,38 @@
     <title>Blog | Petr Svoboda</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/milligram.css">
-    <link rel="stylesheet" href="css/basscss.min.css">
     <link rel="stylesheet" href="css/blog.css">
 </head>
 
 <body>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://pagination.js.org/dist/2.6.0/pagination.min.js"></script>
     <script>
-        w3.getHttpObject("data/post.json", myFunction);
-
-        function myFunction(json) {
-            let data = json.at(-1).data
-            let postsListHtml = ''
-            // let limit = data.length
+        async function getPosts() {
+            let json = await fetch("data/post.json")
+                .then(raw => raw.json())
+            let data = await json.at(-1).data
             let limit = 10
-            for (let i = 0; i < limit; i++) {
-                const element = data[i];
-                // date_published
-                postsListHtml += `<li><a href="post.html?article=${element.link}">${element.title}</a></li>`
-            }
 
-            document.getElementById('content').innerHTML = postsListHtml
+            $('#pagination').pagination({
+                dataSource: data,
+                pageSize: limit,
+                callback: function (data, pagination) {
+                    let html = '<ul>';
+                    $.each(data, function (index, item) {
+                        html += `<li><a href="post.html?article=${item.link}">${item.title}</a></li>`;
+                    });
+                    html += '</ul>';
+                    $('#content').html(html);
+                }
+            })
         }
+
+        getPosts()
     </script>
-    <ul id="content"></ul>
+
+    <div id="content"></div>
+    <div id="pagination"></div>
 </body>
 
 </html>

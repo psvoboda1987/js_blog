@@ -413,3 +413,21 @@ ol li::marker {
     padding: 20px;
     border-radius: 10px;
 }
+
+#pagination li {
+    display: inline;
+    cursor: pointer;
+    padding: 8px 14px;
+}
+
+#pagination li a {
+    color: #555;
+}
+
+#pagination li:hover {
+    background-color: #ddd;
+}
+
+#pagination li.active {
+    background-color: #bbb;
+}

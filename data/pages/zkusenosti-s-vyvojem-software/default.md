@@ -1,0 +1,19 @@
+---
+Zkušenosti s vývojem software
+---
+
+### Nasdílím zde pár tipů, faktů a zkušeností, které se mi osvědčily při tvorbě aplikací a programů.
+
+1. než jdu dál, zastavím se a zeptám se sám sebe, jestli opravdu chápu co dělám, pro koho a za jakým účelem
+2. jak dobře jsem odpočatý a soustředěný má mnohem větší vliv na kvalitu výsledku, než jazyk ve kterém programuji
+3. občas zpomal a splácej včas svůj technický dluh
+4. než něco rozhodneš, zamysli se nad důsledky navrhovaného řešení v širším kontextu
+5. je lepší si počkat na specifikaci a nedomýšlet nebo odhadovat
+
+### Nyní trochu vysvětlím a popíšu jednotlivé body a kde se dají použít
+
+1. Je daleko efektivnější jít pomalu, ale správným směrem, než sprintovat co nejrychleji to jde neznámo kam. Ten, kdo určuje jak má aplikace fungovat je především koncový uživatel. Pokud pro něj aplikace nebo webový stránka není přínosná, pochopitelná a jednoduchá na použití, je jedno jak vypadá a jakým jazykem je naprogramovaná. Použití nejmodernějších technik, doplňků nebo animací je k ničemu, když je nikdo nevyužívá a tedy ani neocení.
+2. Pracuji li ve firmě nebo společně s kolegou na stejném projektu, je zásadní, abychom oba programovali ve stejném jazyku a verzi. Například PHP 7 s využitím frameworku XY a objektového konceptu programování, data ukládaná do SQL databáze. Koncovému uživateli a tím částečně i zákazníkovi je to ale jedno. Pro něj je důležitější, abych dodal práci dotaženou do konce, včas a s minimem chyb. Na případné chyby přijdeme společně v režimu testování nebo v prvním týdnu po nasazení.
+3. Seznam restů nemá cenu vytvářet a udržovat, pokud se v něm úkoly jen donekonečna hromadí. Technický dluh je potřeba postupně splácet. Včasným řešením dosavadních problémů mohu přijít na další problém, který by se jinak ukázal až po nasazení. Také to usnadňuje samotnou náročnosti korekce. Protože čím dříve si něčeho všimnu a opravím to, tím dřív to můžu začít psát lépe (správně) a tím méně korekcí celkem bude.
+4. Co, když budu potřebovat víc, než 1 jazykovou verzi? Co když budu muset zpracovat více než 1 soubor nebo datový typ? Co když zákazník nebo uživatel bude chtít něco změnit, když už to mám skoro hotové? Je lepší se na chvíli realisticky zamyslet, jak to asi bude v reálu a případné návrhy konzultovat nebo zákazníka nechat testovat na beta verzi. Dělat zásadní změny v architektuře těsně předtím, než je projekt hotový znamená tunu testování a tedy času navíc, kromě změn samotných. Je snazší udělat pokročilejší řešení jednou, otestovat ho a potvrdit, než udělat jednoduché řešení, které pak doplňuji, vymýšlím různé triky jak to obejít a nakonec stejně sám uznám, že je potřeba předělat to celé.
+5. Skvělá zásada z konceptu funkčního programování je dělat jednoduché funkce, které umí jednu věc výborně ne dvě věci průměrně. Z dobře napsaných, srozumitelných a efektivních funkcí se dá program snadno poskládat. Zjednoduší to navíc celé testování, hledání a opravování chyb. Správně definované požadavky velmi usnadňují práci a domluvu. Zadání může být černé, nebo bílé, ale nemělo by být šedé. Chcete jablko? Fajn. Chcete hrušku? OK. Ale nechtějte prosím něco mezi tím. A nebo se pak alespoň nedivte, že se vám to ve finále prodraží víc než hruška i jablko dohromady.

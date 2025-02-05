@@ -1,5 +1,4 @@
-## Definice finančních pojmů v podnikání'
-published: false
+## Definice finančních pojmů v podnikání
 
 ## Jakou formou je možné vydělat peníze
 

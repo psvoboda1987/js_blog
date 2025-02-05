@@ -1,10 +1,8 @@
 ## Nevhodné vzory a řešení v programování'
-media_order: bad-wiring.jpg
 
 Stejně jako existují nějaké vzory, které programátorovi pomáhají posunout jeho kód na vyšší úroveň existují i tzv. anti vzory. Znaky problematické praktiky, která ze zkušenosti působí více problémů než užitku. Podíváme se na některé z nich.
 ## Špagety
 Kód který je nesrozumitelný, nečitelný a nemá žádnou strukturu, žádné uspořádání. Viděli jste někdy alespoň na obrázku neodbornou elektro instalaci? Možná vám to připomene nepořádek v pokoji studentů na koleji či něco podobného, co jste kdysi vyklízeli z garáže po letech. Nechce se vám do toho, ale čím dříve se tím proberete, rozmotáte všechna klubka, tím méně dalšího chaosu se vám přestane nabalovat.
-![](bad-wiring.jpg)
 ## Zlaté kladivo
 Možná je to z lenosti nebo podohlnosti, ale může se vám stát, že přestanete kreativně přemýšlet a začnete používat jedno řešení na každý problém. Typickou ukázkou může být jQuery. Je to užitečná knihovna, která má své místo. Ale líný programátor, který ji použije na každý byť sebemenší projekt, kde chce jen zapojit efekt na klikací tlačítko svou leností nutí uživatele na mobilních telefonech stahovat desítky nebo i stovky kB dat, které nevyužijí.
 ## Táhnutí kotvy za lodí

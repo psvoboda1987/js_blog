@@ -1,5 +1,4 @@
-## Jak získat nové zákazníky'
-published: false
+## Jak získat nové zákazníky
 
 * Najdi klienta s technickým problémem (na sociálních sítích, mapě).
 * Analyzuj jeho požadavky a zjisti, jestli je umíš splnit a vyřešit tak jeho problém.

@@ -1,7 +1,5 @@
----
-Man day ceny'
+## Man day ceny'
 published: false
----
 
 Tabulka s počty hodin dle tarifu na cílovou částku 83 000 Kč / měsíc (kvůli optimalizaci daní a nepřekročení sazby pro registraci k platbě DPH)
 

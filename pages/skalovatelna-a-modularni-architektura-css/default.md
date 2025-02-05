@@ -1,6 +1,4 @@
----
-SMACSS - Škálovatelná a modulární architektura CSS
----
+## SMACSS - Škálovatelná a modulární architektura CSS
 
 S nápadem přišel Jonathan Snook.
 Hlavní myšlenka spočívá v oddělení CSS do několika kategorií.

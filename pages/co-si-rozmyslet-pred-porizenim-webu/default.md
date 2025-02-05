@@ -1,6 +1,4 @@
----
-Co si rozmyslet před pořízením webu
----
+## Co si rozmyslet před pořízením webu
 
 Chcete mít webové stránky? Pak je tu řada otázek, na které byste měli mít jasné odpovědi. Ušetříte se tak nepříjemností jako jsou nepřiměřená očekávání (zejména termíny kdy budou stránky hotové a kdy přinesou první úspěchy).
 

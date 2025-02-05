@@ -1,6 +1,4 @@
----
-Každý vývojář by měl mít svůj katalog
----
+## Každý vývojář by měl mít svůj katalog
 
 Jedna z nejhorších chyb při programování je programování náhodou, styl copy paste a vědomé opakování chyb z lenosti.
 ### Programování náhodou

@@ -1,6 +1,4 @@
----
-10 nejčastějších bezpečnostních rizik webových aplikací
----
+## 10 nejčastějších bezpečnostních rizik webových aplikací
 
 1. Injection (spuštění příkazu přes nezabezpečený vstup např. na formuláři)
 2. Chyba v autentikaci (odcizení klíče, tokenu, session údajů)

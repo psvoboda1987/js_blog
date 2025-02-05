@@ -1,6 +1,4 @@
----
-Základní principy SEO
----
+## Základní principy SEO
 
 Co je to SEO?
 Zkratka která znamená optimalizace pro vyhledávače. Je to metodika, která vychází z principů fungování [vyhledávačů](https://www.jakpsatweb.cz/vyhledavace.html) (Google, Seznam, Bing...). Algorytmy vyhledávačů se čas od času mění, nastavují se jiné priority, bezpečnostní kontroly atd.

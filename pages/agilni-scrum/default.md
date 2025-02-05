@@ -1,6 +1,4 @@
----
-Agilní scrum
----
+## Agilní scrum
 
 Některé metody, které se používají při řízení projektů můžete aplikovat i v malých osobních projektech. A nemusíte být zrovna součástí nějakého týmu.
 ## Včasné a průběžné dodávání verzí

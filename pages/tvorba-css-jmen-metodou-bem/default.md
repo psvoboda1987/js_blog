@@ -1,6 +1,4 @@
----
-Tvorba css jmen metodou BEM
----
+## Tvorba css jmen metodou BEM
 
 Metoda BEM (Blok, Element, Modifikátor) slouží k organizaci stylopisu .css pro tvorbu webových stránek.
 <br>

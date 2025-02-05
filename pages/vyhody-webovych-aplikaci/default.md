@@ -1,6 +1,4 @@
----
-Výhody webových aplikací
----
+## Výhody webových aplikací
 
 Pokud ve vaší firmě potřebujete aplikaci, není nutné hned pořizovat software na zakázku.
 <br>

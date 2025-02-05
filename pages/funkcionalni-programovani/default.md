@@ -1,6 +1,4 @@
----
-Funkcionální programování
----
+## Funkcionální programování
 
 # Funkcionální programování
 Funkcionální programování má dvě hlavní zásady.

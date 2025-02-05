@@ -1,6 +1,4 @@
----
-Soft skills vhodné pro programátora
----
+## Soft skills vhodné pro programátora
 
 Zákazník, který si objedná aplikaci, web nebo službu nevidí kód, který píšu ani kvalitu řešení, které jsem vymyslel a zrealizoval. Nepozná, jestli je napsaný čistě, srozumitelně a má li tedy dobré základy pro případné rozšiřování. Zákazník pozná pouze to, jak aplikace nebo web vypadá, jestli funguje a jak rychle. V druhé vlně si může poslechnout zpětnou vazbu uživatelů. Zákazník ocení hlavně ekonomický přínos a viditelné výsledky.
 

@@ -1,6 +1,4 @@
----
-Kde hledat programátora nebo novou práci
----
+## Kde hledat programátora nebo novou práci
 
 Github je velká platforma, kterou odkoupil Microsoft. Slouží primárně jako repozitoře pro projekty (úložiště zdrojového kódu).
 <br>

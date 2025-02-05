@@ -1,6 +1,4 @@
----
-Refaktoring kdy a jak
----
+## Refaktoring kdy a jak
 
 ### Co je to refaktorování kódu?
 Je to podobné jako když probíráte skříň s oblečením. Něco vám už není, něco už je obnošené ale hodí se ještě třeba na chatu. Něco vyšlo z módy nebo jste to nahradili něčím lepším, praktičtějším nebo hezčím.

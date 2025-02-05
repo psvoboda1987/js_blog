@@ -1,6 +1,4 @@
----
-Plnění cílů a předsevzetí
----
+## Plnění cílů a předsevzetí
 
 Také jste si na tento rok dali nějaké cíle?
 <br>

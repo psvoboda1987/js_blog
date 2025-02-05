@@ -1,6 +1,4 @@
----
-Pojmy z IT a aplikace na procvičování paměti
----
+## Pojmy z IT a aplikace na procvičování paměti
 
 Vzpomněl jsem si na kalendář s čokoládovými kostičkami v jednotlivých okénkách předcházející Štědrému dnu, který jsem jako dítě kdysi dostal od rodičů. Na podobném principu jsem naprogramoval aplikaci, kam jsem vložil dvě desítky pojmů, se kterými se jako programátor občas setkávám.
 Úpravou zdrojového kódu si můžete aplikaci naklonovat a vložit si vlastní pojmy.

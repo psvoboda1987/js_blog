@@ -1,6 +1,4 @@
----
-Výběr barev webové stránky
----
+## Výběr barev webové stránky
 
 Zkoušeli jste někdy různé barevné kombinace textu a jeho pozadí a jejich čitelnost?
 <br>

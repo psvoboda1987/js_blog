@@ -1,6 +1,4 @@
----
-Work life balance
----
+## Work life balance
 
 Co si představujete pod pojmem vyváženost mezi pracovním a osobním životem?
 <br>

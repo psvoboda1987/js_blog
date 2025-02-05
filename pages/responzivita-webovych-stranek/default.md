@@ -1,7 +1,5 @@
----
-Responzivita webových stránek'
+## Responzivita webových stránek'
 media_order: 'natery_original_test_responzivity.png,natery_original_test_rychlosti.png,natery_upraveno_test_responzivity.png,natery_upraveno_test_rychlosti.png
----
 
 ## Co je responzivita?
 Pojem responzivita vychází ze slova response (odpověď, reakce). Je to schopnost přizpůsobit se a nejednat neustále jedním způsobem.

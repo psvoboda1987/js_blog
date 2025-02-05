@@ -1,6 +1,4 @@
----
-Pragmatické programování
----
+## Pragmatické programování
 
 ### Co je to pragmatika?
 Je to praktikování řeči (výroků), která nejen něco říká, ale také má nějaký cíl.

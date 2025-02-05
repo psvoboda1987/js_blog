@@ -1,6 +1,4 @@
----
-Výhody ORM - objektově relačního mapování
----
+## Výhody ORM - objektově relačního mapování
 
 **Objektově relační mapování** zajišťuje konverzi dat mezi **relační databází** a objektově orientovaným programovacím jazykem.
 <br>

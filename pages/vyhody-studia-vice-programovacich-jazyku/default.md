@@ -1,6 +1,4 @@
----
-Výhody studia více programovacích jazyků
----
+## Výhody studia více programovacích jazyků
 
 Možná byste si řekli, že studium více jazyků se nemusí nutně vyplatit. Protože vrátit se zpět na začátek a učit se od základů jiný programovací jazyk znovu zabere dost času. A možná to nepřinese tolik užitku jako posouvat se dále v progracím jazyku, který se člověk učil doposud.
 <br>

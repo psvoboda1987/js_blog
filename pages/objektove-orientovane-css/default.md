@@ -1,6 +1,4 @@
----
-Objektově orientované CSS
----
+## Objektově orientované CSS
 
 Objektově orientované psaní se na CSS objekt dívá jako na komponentu tvořenou HTML, CSS a případně JavaScriptem.
 <br>

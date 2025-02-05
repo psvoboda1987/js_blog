@@ -1,7 +1,5 @@
----
-Nevhodné vzory a řešení v programování'
+## Nevhodné vzory a řešení v programování'
 media_order: bad-wiring.jpg
----
 
 Stejně jako existují nějaké vzory, které programátorovi pomáhají posunout jeho kód na vyšší úroveň existují i tzv. anti vzory. Znaky problematické praktiky, která ze zkušenosti působí více problémů než užitku. Podíváme se na některé z nich.
 ## Špagety

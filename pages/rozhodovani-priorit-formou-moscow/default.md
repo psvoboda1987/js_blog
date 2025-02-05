@@ -1,6 +1,4 @@
----
-Rozhodování priorit formou MoSCoW
----
+## Rozhodování priorit formou MoSCoW
 
 Také jste někdy stáli před rozhodnutím, kdy jste si potřebovali vyjasnit priority? Jak jste je rozřadili? Vysoké, střední, nízké...hned teď, co nejdříve, později. I takové je možné kategorizování.
 <br>

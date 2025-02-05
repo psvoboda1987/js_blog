@@ -1,6 +1,4 @@
----
-Pravidelné cvičení přináší zlepšení
----
+## Pravidelné cvičení přináší zlepšení
 
 Jako každou dovednost, tak i programování je potřeba cvičit. Podobně jako hudbu. Člověk má pak nápady, jak zlepšit svůj um a posunout se zase o úroveň dále. Aby to vše bylo více melodické.
 <br>

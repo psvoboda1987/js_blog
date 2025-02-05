@@ -1,6 +1,4 @@
----
-Objektově orientované programování
----
+## Objektově orientované programování
 
 ## Objektově orientované programování
 OOP je hitem posledních několika desítek let. Většina slušných programovacích jazyků využití objektů podporuje. **Objekty přinášejí mnoho výhod**, ale samozřejmě nejsou odpovědí na vše.

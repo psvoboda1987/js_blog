@@ -1,6 +1,4 @@
----
-Inspirace a motivace
----
+## Inspirace a motivace
 
 Hledáte-li inspiraci nebo motivační prohlášení, zde je najdete od osobností z celého světa, známých i neznámých. (texty jsou v angličtině)
 

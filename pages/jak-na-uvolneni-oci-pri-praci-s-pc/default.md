@@ -1,6 +1,4 @@
----
-Jak na uvolnění očí při práci s PC
----
+## Jak na uvolnění očí při práci s PC
 
 Pro optimální fungování očí je důležité především často mrkat. A nepodlehnout tak syndromu suchého oka, kdy podvědomě člověk zapomene mrkat dostatečně často při práci na PC.
 <br>

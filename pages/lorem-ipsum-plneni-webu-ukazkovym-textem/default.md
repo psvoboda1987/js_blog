@@ -1,6 +1,4 @@
----
-Lorem ipsum - plnění webu ukázkovým textem
----
+## Lorem ipsum - plnění webu ukázkovým textem
 
 Když děláte grafický návrh nebo webovou stránku, často potřebujete nějaký pseudo text, kterým zaplníte budoucí obsah. Ukázkový text zvaný **lorem ipsum** je možná starší, než si myslíte.
 <br>

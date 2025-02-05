@@ -1,6 +1,4 @@
----
-Moderní vývoj - KISS
----
+## Moderní vývoj - KISS
 
 Tento akronym o tom, jak je důležitá jednoduchost, jste možná v nějaké formě již potkali. Původně s ním údajně přišel Kelly Johnson, letecký konstruktér.
 <br>

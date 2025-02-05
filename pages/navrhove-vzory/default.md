@@ -1,6 +1,4 @@
----
-Užitečné návrhové vzory
----
+## Užitečné návrhové vzory
 
 Některé návrhové vzory jsou velmi užitečné a je vhodné je použít tam, kde se hodí. Zde je 5 populárních vzorů.
 ## Adaptér

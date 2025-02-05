@@ -1,6 +1,4 @@
----
-Moderní vývoj - MVC
----
+## Moderní vývoj - MVC
 
 MVC znamená Model View Controller. Je to tedy pojmenování částí aplikace podle toho, co jednotlivá část dělá, za co má zodpovědnost.
 <br>

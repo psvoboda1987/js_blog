@@ -1,6 +1,4 @@
----
-Udržitelnost růstu CSS pomocí stupňované specificity
----
+## Udržitelnost růstu CSS pomocí stupňované specificity
 
 Jedna metodika na organizaci CSS, která se v něčem podobá a v něčem se liší od ostatních je ITCSS. Označení je zkratka pro Inverted Triangle. Tedy otočený trojúhelník.
 <br>

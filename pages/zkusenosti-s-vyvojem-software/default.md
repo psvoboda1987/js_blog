@@ -1,6 +1,4 @@
----
-Zkušenosti s vývojem software
----
+## Zkušenosti s vývojem software
 
 ### Nasdílím zde pár tipů, faktů a zkušeností, které se mi osvědčily při tvorbě aplikací a programů.
 

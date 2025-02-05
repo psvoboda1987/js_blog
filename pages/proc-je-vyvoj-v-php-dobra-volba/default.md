@@ -1,6 +1,4 @@
----
-Proč je vývoj v PHP dobrá volba
----
+## Proč je vývoj v PHP dobrá volba
 
 PHP je dobrá volba pro vývoj webové stránky nebo aplikace. Existuje pro to několik důvodů.
 <br>

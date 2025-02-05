@@ -1,6 +1,4 @@
----
-Pár tipů na rychlejší Javascript
----
+## Pár tipů na rychlejší Javascript
 
 Před tím, než se zamyslím, jak napsat dobrý kód nebo zlepšit stávající se raději zeptám na pár otázek.
 * Musím to vůbec řešit?

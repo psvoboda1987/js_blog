@@ -1,6 +1,4 @@
----
-Psaní všemi deseti + aplikace
----
+## Psaní všemi deseti + aplikace
 
 Ti z vás, kdo se to učili na škole to už máte za sebou. Ti z vás, kdo se to chcete naučit nebo se v tom právě zdokonalujete jste si pravděpodobně vygooglili jak na to.
 

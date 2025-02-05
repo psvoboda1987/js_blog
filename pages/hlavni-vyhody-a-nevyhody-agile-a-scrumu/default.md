@@ -1,6 +1,4 @@
----
-Hlavní výhody a nevýhody Agile a Scrumu
----
+## Hlavní výhody a nevýhody Agile a Scrumu
 
 Slovo agilní samo o sobě znamená především schopnost se obratně pohybovat. Nejít stále jen přímo vpřed. Ale reagovat na překážky a umět je obejít nebo přeskočit tak jako v gymnastice.
 <br>

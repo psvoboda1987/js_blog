@@ -1,6 +1,4 @@
----
-Lékařská diagnostika na dálku
----
+## Lékařská diagnostika na dálku
 
 Mnozí z vás se možná již setkali se spoluprací s doktorem na dálku. Ať už kvůli snížení možnosti nakažení ostatních lidí nebo kvůli nedávnému zákazu vycházení.
 <br>

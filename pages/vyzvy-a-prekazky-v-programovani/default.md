@@ -1,6 +1,4 @@
----
-Výzvy a překážky v programování
----
+## Výzvy a překážky v programování
 
 Když se o něco snažíte, začnou vám chodit výzvy a zkoušky. Jde o to, jak je překonat a nenechat se jimi odradit.
 <br>

@@ -1,6 +1,4 @@
----
-Moderní vývoj - DRY vs. WET
----
+## Moderní vývoj - DRY vs. WET
 
 ### Don´t repeat yourself - neopakuj se
 Proč je dodržování tohoto vývojového pravidla důležité a prospěšné?

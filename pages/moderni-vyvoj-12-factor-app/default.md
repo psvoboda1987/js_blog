@@ -1,6 +1,4 @@
----
-Moderní vývoj - 12 factor App
----
+## Moderní vývoj - 12 factor App
 
 **12 faktorů** je soupis dobrých a osvědčených zásad, které vycházejí ze zkušenosti odborníků z cloudové platformy [Heroku](www.heroku.com). Ta hostuje tisíce aplikací v různých programovacích jazycích. Když dali vývojáři hlavy a zkušenosti dohromady, sepsali 12 zásad, které se vyplatí více či méně dodržet pro téměř všechny moderní aplikace. Zejména ty, které běží jako služby.
 <br>

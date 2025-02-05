@@ -1,6 +1,4 @@
----
-Snížení množství přenášených dat
----
+## Snížení množství přenášených dat
 
 Všichni máme rádi rychlost, zejména když jde o techniku. Způsobů jak dosáhnout je několik.
 <br>

@@ -1,6 +1,4 @@
----
-Zjištění skutečné příčiny neúspěchu
----
+## Zjištění skutečné příčiny neúspěchu
 
 Jednou z technik, jak přijít na jádro problému se kterou jsem se v životě setkal je **"Why five"**
 <br>

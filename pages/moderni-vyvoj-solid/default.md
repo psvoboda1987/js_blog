@@ -1,6 +1,4 @@
----
-Moderní vývoj - SOLID
----
+## Moderní vývoj - SOLID
 
 Slyšeli jste o objektově orientovaném vývoji? Pak jste pravděpodobně slyšeli o zkratce SOLID.
 <br>

@@ -1,6 +1,4 @@
----
-Každý důležitý prvek by měl být zálohovaný
----
+## Každý důležitý prvek by měl být zálohovaný
 
 Repozitoře na principu verzování pomocí GITu jsou velmi šikovní pomocníci. Většinou jdou sehnat zdarma a v relativně rozsáhlé velikosti úložného prostoru. **Nevyužít takového pomocníka na jakýkoliv, menší nebo větší projekt je chyba.**
 <br>

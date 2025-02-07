@@ -37,7 +37,7 @@ function activateSorting(e) {
 }
 
 async function getData(search) {
-    let data = await fetch('../data/posts.json').then(raw => raw.json());
+    let data = await fetch('posts.json').then(raw => raw.json());
     if (search) {
         let newData = [];
         let pattern = new RegExp(search, 'gi');

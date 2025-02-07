@@ -13,30 +13,21 @@
 </head>
 
 <body>
+<input type="text" name="search" id="search" placeholder="Search...">
+
+<button id="mode" data-mode="light">Dark</button>
+
+<button id="sort" data-sort="ascending">SORT</button>
+
 <div id="content"></div>
+
 <div id="pagination"></div>
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://pagination.js.org/dist/2.6.0/pagination.min.js"></script>
-<script type="module">
-    let json = await fetch('posts.json')
-        .then(raw => raw.json());
-    let data = await json.at(-1).data;
-    let limit = 10;
 
-    $('#pagination').pagination({
-        dataSource: data,
-        pageSize: limit,
-        callback: function (data, pagination) {
-            let html = '<ul>';
-            $.each(data, function (index, item) {
-                html += `<li><a href="post.html?article=${item.link}">${item.title}</a></li>`;
-            });
-            html += '</ul>';
-            $('#content').html(html);
-        }
-    });
-</script>
+<script src="https://pagination.js.org/dist/2.6.0/pagination.min.js"></script>
+
+<script type="module" src="script/script.js"></script>
 </body>
 
 </html>

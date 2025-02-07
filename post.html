@@ -13,16 +13,39 @@
 </head>
 
 <body>
+<button id="mode" data-mode="light">Dark</button>
+
 <div id="content"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
 <script type="module">
-    const urlParams = new URLSearchParams(window.location.search);
-    const title = urlParams.get('article');
-    const converter = new showdown.Converter();
-    await fetch(`pages/${title}/default.md`)
-        .then(data => data.text())
-        .then(data => document.getElementById('content').innerHTML = converter.makeHtml(data));
+    document.getElementById('mode').addEventListener('click', (e) => {
+        switchColorMode(e);
+    })
+
+    await renderPost();
+
+    function switchColorMode(e) {
+        let switchEl = e.target;
+        if (switchEl.dataset.mode === 'dark') { // activate dark
+            switchEl.dataset.mode = 'light';
+            switchEl.innerText = 'dark';
+        } else { // activate light
+            switchEl.dataset.mode = 'dark';
+            switchEl.innerText = 'light';
+        }
+        document.body.className = switchEl.dataset.mode;
+    }
+
+    async function renderPost() {
+        const converter = new showdown.Converter();
+        const urlParams = new URLSearchParams(window.location.search);
+        const title = urlParams.get('article');
+        await fetch(`pages/${title}/default.md`)
+            .then(data => data.text())
+            .then(data => document.getElementById('content').innerHTML = converter.makeHtml(data));
+    }
 </script>
 
 </body>

@@ -1,76 +1,67 @@
-renderPostsListAndPagination(await getData());
+setColorModeFromStorage();
 
-document.getElementById('sort').addEventListener('click', async (e) => {
-    activateSorting(e);
-    renderPostsListAndPagination(await getData());
-})
+activateColorModeSwitch();
 
-document.getElementById('mode').addEventListener('click', (e) => {
-    switchColorMode(e);
-})
+activateFontSizeIncreaseSwitch();
 
-document.getElementById('search').addEventListener('keyup', async (e) => {
-    renderPostsListAndPagination(await getData(e.target.value));
-})
+activateFontSizeDecreaseSwitch();
 
-function switchColorMode(e) {
-    let switchEl = e.target;
-    if (switchEl.dataset.mode === 'dark') { // activate dark
-        switchEl.dataset.mode = 'light';
-        switchEl.innerText = 'dark';
-    } else { // activate light
-        switchEl.dataset.mode = 'dark';
-        switchEl.innerText = 'light';
+setFontSize();
+
+function activateColorModeSwitch() {
+    getElementById('colorMode').addEventListener('click', (e) => {
+        switchColorMode(e.target);
+    });
+}
+
+function setColorModeFromStorage() {
+    let mode = localStorage.getItem('colorMode') || 'light';
+    let switchEl = getChangedColorSwitchElement(getElementById('colorMode'), mode);
+    switchColorMode(switchEl, mode);
+}
+
+function getChangedColorSwitchElement(switchElement, mode) {
+    if (mode === 'dark') {
+        switchElement.dataset.mode = 'light'; // activate light
+        switchElement.innerText = mode;
+    } else {
+        switchElement.dataset.mode = 'dark';
+        switchElement.innerText = mode;
     }
+    return switchElement;
+}
+
+function switchColorMode(switchElement) {
+    let switchEl = getChangedColorSwitchElement(switchElement, switchElement.dataset.mode);
+    localStorage.setItem('colorMode', switchEl.dataset.mode);
     document.body.className = switchEl.dataset.mode;
 }
 
-function activateSorting(e) {
-    const sortEl = e.target;
-    if (sortEl.dataset.sort === 'ascending') {
-        sortEl.dataset.sort = 'descending';
-        sortEl.innerText = 'DESC';
-    } else {
-        sortEl.dataset.sort = 'ascending';
-        sortEl.innerText = 'ASC';
-    }
-}
-
-async function getData(search) {
-    let data = await fetch('posts.json').then(raw => raw.json());
-    if (search) {
-        let newData = [];
-        let pattern = new RegExp(search, 'gi');
-        data.forEach((item) => {
-            if (item.title.search(pattern) !== -1) {
-                newData.push(item);
-            }
-        })
-        data = newData;
-    }
-    if (document.getElementById('sort').dataset.sort === 'descending') {
-        data = data.toSorted((a, b) => parseInt(a.id) < parseInt(b.id));
-    }
-    return data;
-}
-
-function renderPostsListAndPagination(data) {
-    $('#pagination').pagination({
-        dataSource: data,
-        showSizeChanger: true,
-        showNavigator: true,
-        autoHideNext: true,
-        autoHidePrevious: true,
-        // showGoInput: true,
-        // showGoButton: true,
-        sizeChangerOptions: [5, 10, 20],
-        callback: function (data, pagination) {
-            let html = '<ul>';
-            $.each(data, function (index, item) {
-                html += `<li><a href="post.html?article=${item.link}">${item.title}</a></li>`;
-            });
-            html += '</ul>';
-            $('#content').html(html);
-        }
+function activateFontSizeIncreaseSwitch() {
+    getElementById('fontSizeIncrease').addEventListener('click', (e) => {
+        let fontSize = getFontSize();
+        fontSize++;
+        setFontSize(fontSize);
     });
+}
+
+function activateFontSizeDecreaseSwitch() {
+    getElementById('fontSizeDecrease').addEventListener('click', (e) => {
+        let fontSize = getFontSize();
+        fontSize--;
+        setFontSize(fontSize);
+    });
+}
+
+function getFontSize() {
+    return localStorage.getItem('fontSize') || parseInt(getComputedStyle(document.body).getPropertyValue('font-size'));
+}
+
+function setFontSize(fontSize = getFontSize()) {
+    localStorage.setItem('fontSize', fontSize);
+    document.body.style.fontSize = `${fontSize}px`;
+}
+
+function getElementById(id) {
+    return document.getElementById(id);
 }

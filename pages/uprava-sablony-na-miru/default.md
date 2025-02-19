@@ -1,5 +1,4 @@
 ## Úprava šablony na míru'
-media_order: 'formular_original.png,formular_upraveno.png,hlavicka_original.png,hlavicka_upraveno.png,paticka_original.png,paticka_upraveno.png,profil_original.png,profil_upraveno.png,reference_original.png,reference_upraveno.png
 
 ## Proč se vyplatí investovat do úpravy šablony na míru?
 Nejlépe fungují produkty, které jsou dělané na míru. Oblek, který máte šitý přímo pro sebe padne jako ulitý. Při nákupu konfekce jste nuceni občas udělat tu a tam kompromis. Ale to, že vám krejčí nešije celý oblek neznamená, že vám nemůže pomoci s pár detaily.

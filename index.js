@@ -1,4 +1,6 @@
-renderPostsListAndPagination(await getData());
+let data = await getData();
+
+renderPostsListAndPagination(data);
 
 activateSortSwitch();
 
@@ -28,7 +30,8 @@ function changeSortingButtonProperties(sortEl) {
 }
 
 async function getData(search) {
-    let data = await fetch('posts.json').then(raw => raw.json());
+    let rawData = await fetch('posts.json').then(raw => raw.json());
+    let data = rawData.filter(item => item.publish =='true');
     if (search) {
         let newData = [];
         let pattern = new RegExp(search, 'gi');

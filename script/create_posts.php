@@ -5,7 +5,6 @@ use FastVolt\Helper\Markdown;
 require_once '../vendor/autoload.php';
 
 createPostsJson();
-var_dump('DONE');
 
 function createPostsJson()
 {
@@ -18,5 +17,7 @@ function createPostsJson()
         ));
         $postsData[$p]['content'] = $markdown->getHtml();
     }
-    file_put_contents('../posts.json', json_encode($postsData));
+    var_dump(
+        file_put_contents('../posts.json', json_encode($postsData))
+    );
 }

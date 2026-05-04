@@ -13,7 +13,7 @@ async function renderPost() {
     // fix img src
     Array.from(document.images).forEach(image => {
         let search = location.pathname.split('/')[1];
-        let replace = `${location.pathname.split('/')[1]}/assets/posts/${title}`;
+        let replace = `${location.pathname.split('/')[1]}/assets/posts`;
         image.src = image.src.replace(search, replace);
-    })
+    });
 }

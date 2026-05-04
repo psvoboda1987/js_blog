@@ -6,7 +6,7 @@ async function renderPost() {
     const converter = new showdown.Converter();
     const urlParams = new URLSearchParams(location.search);
     const title = urlParams.get('article');
-    await fetch(`assets/posts/${title}/default.md`)
+    await fetch(`assets/posts/${title}.md`)
         .then(data => data.text())
         .then(data => document.getElementById('content').innerHTML = converter.makeHtml(data));
 

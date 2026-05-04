@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fastvolt/markdown": "^0.2.5"
+    }
+}

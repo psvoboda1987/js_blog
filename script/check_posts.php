@@ -1,8 +1,8 @@
 <?php
 
-$pages = scandir('./pages');
+$pages = scandir('../assets/posts');
 
-$listItemsData = json_decode(file_get_contents('./posts.json'));
+$listItemsData = json_decode(file_get_contents('../posts.json'));
 $listItems = [];
 foreach ($listItemsData as $key => $value) {
 	$listItems[] = $value->link;

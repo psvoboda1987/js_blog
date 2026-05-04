@@ -30,8 +30,11 @@ function changeSortingButtonProperties(sortEl) {
 }
 
 async function getData(search) {
-    let rawData = await fetch('posts.json').then(raw => raw.json());
-    let data = rawData.filter(item => item.publish =='true');
+    let rawData = await fetch('posts_generated.json').then(raw => raw.json());
+    // let rawData = await fetch('posts.json').then(raw => raw.json());
+    // let data = rawData.filter(item => item.publish == 'true');
+    let data = rawData;
+    console.log(rawData);
     if (search) {
         let newData = [];
         let pattern = new RegExp(search, 'gi');

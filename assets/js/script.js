@@ -1,63 +1,65 @@
-setColorModeFromStorage();
-
 activateColorModeSwitch();
 
-activateFontSizeIncreaseSwitch();
+setColorModeFromStorage();
 
-activateFontSizeDecreaseSwitch();
+activateFontSizeIncreaseButton();
 
-setFontSize();
+activateFontSizeDecreaseButton();
+
+setFontSize(getFontSize());
 
 function activateColorModeSwitch() {
     getElementById('colorMode').addEventListener('click', (e) => {
-        switchColorMode(e.target);
+        setDocumentColorMode(e.target.dataset.mode);
+        changeColorModeSwitchElement(e.target.dataset.mode);
     });
 }
 
 function setColorModeFromStorage() {
     let mode = localStorage.getItem('colorMode') || 'light';
-    let switchEl = getChangedColorSwitchElement(getElementById('colorMode'), mode);
-    switchColorMode(switchEl, mode);
+    changeColorModeSwitchElement(mode);
+    setDocumentColorMode(mode);
 }
 
-function getChangedColorSwitchElement(switchElement, mode) {
+function changeColorModeSwitchElement(mode) {
+    let switchElement = getElementById('colorMode');
     if (mode === 'dark') {
-        switchElement.dataset.mode = 'light'; // activate light
+        switchElement.dataset.mode = 'light'; // activate light mode
         switchElement.innerText = mode;
     } else {
         switchElement.dataset.mode = 'dark';
         switchElement.innerText = mode;
     }
-    return switchElement;
 }
 
-function switchColorMode(switchElement) {
-    let switchEl = getChangedColorSwitchElement(switchElement, switchElement.dataset.mode);
-    localStorage.setItem('colorMode', switchEl.dataset.mode);
-    document.body.className = switchEl.dataset.mode;
+function setDocumentColorMode(mode) {
+    localStorage.setItem('colorMode', mode);
+    document.body.className = mode;
 }
 
-function activateFontSizeIncreaseSwitch() {
+function activateFontSizeIncreaseButton() {
     getElementById('fontSizeIncrease').addEventListener('click', (e) => {
-        let fontSize = getFontSize();
-        fontSize++;
-        setFontSize(fontSize);
+        setFontSize(getFontSize() + 1);
     });
 }
 
-function activateFontSizeDecreaseSwitch() {
+function activateFontSizeDecreaseButton() {
     getElementById('fontSizeDecrease').addEventListener('click', (e) => {
-        let fontSize = getFontSize();
-        fontSize--;
-        setFontSize(fontSize);
+        setFontSize(getFontSize() - 1);
     });
 }
 
 function getFontSize() {
-    return localStorage.getItem('fontSize') || parseInt(getComputedStyle(document.body).getPropertyValue('font-size'));
+    let fontSize = parseInt(localStorage.getItem('fontSize'));
+    if (!Number.isInteger(fontSize)) {
+        fontSize = parseInt(
+            getComputedStyle(document.body).getPropertyValue('font-size')
+        );
+    }
+    return fontSize;
 }
 
-function setFontSize(fontSize = getFontSize()) {
+function setFontSize(fontSize) {
     localStorage.setItem('fontSize', fontSize);
     document.body.style.fontSize = `${fontSize}px`;
 }

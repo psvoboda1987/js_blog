@@ -7,10 +7,6 @@ body {
     color: #444;
 }
 
-body.admin {
-    max-width: 100%;
-}
-
 .button,
 button {
     font-size: 1em;
@@ -233,4 +229,8 @@ ol li::marker {
     filter: invert(100%);
     background-color: #333;
     border-color: #fff;
+}
+
+.dark img {
+    filter: invert(100%);
 }

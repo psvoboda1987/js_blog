@@ -1,19 +1,23 @@
 window.onload = async () => {
     await renderPost();
+    fixImageSrc();
 }
 
 async function renderPost() {
-    const converter = new showdown.Converter();
     const urlParams = new URLSearchParams(location.search);
     const title = urlParams.get('article');
-    await fetch(`assets/posts/${title}.md`)
-        .then(data => data.text())
-        .then(data => document.getElementById('content').innerHTML = converter.makeHtml(data));
+    let json = await fetch(`posts.json`)
+    let data = await json.json()
+    let post = data.find(item => item.link === title);
+    document.getElementById('content').innerHTML = post.content;
+}
 
-    // fix img src
+function fixImageSrc() {
     Array.from(document.images).forEach(image => {
-        let search = location.pathname.split('/')[1];
-        let replace = `${location.pathname.split('/')[1]}/assets/posts`;
+        // let search = location.pathname.split('/')[1];
+        let search = image.src.split('/')[6] + '/';
+        // let replace = `${location.pathname.split('/')[1]}/assets/posts`;
+        let replace = '';
         image.src = image.src.replace(search, replace);
     });
 }

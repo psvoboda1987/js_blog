@@ -16,9 +16,8 @@ async function renderPost() {
 function fixImageSrc() {
     Array.from(document.images).forEach(image => {
         // let search = location.pathname.split('/')[1];
-        // let search = image.src.split('/')[6] + '/';
         // let replace = `${location.pathname.split('/')[1]}/assets/posts`;
-        // let replace = '';
-        // image.src = image.src.replace(search, replace);
+        let search = image.src.split('/')[4];
+        image.src = image.src.replace(search, 'assets/images/' + search);
     });
 }

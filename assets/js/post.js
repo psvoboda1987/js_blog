@@ -1,6 +1,5 @@
 window.onload = async () => {
     await renderPost();
-    fixImageSrc();
 }
 
 async function renderPost() {
@@ -10,6 +9,8 @@ async function renderPost() {
     let data = await json.json()
     let post = data.find(item => item.link === title);
     document.getElementById('content').innerHTML = post.content;
+
+    fixImageSrc();
 }
 
 function fixImageSrc() {

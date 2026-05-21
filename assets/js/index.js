@@ -1,21 +1,16 @@
-let data = await getData();
+window.onload = async function () {
+    renderPostsListAndPagination(await getPosts());
 
-renderPostsListAndPagination(data);
-
-activateSortSwitch();
-
-activateSearchSwitch();
-
-function activateSortSwitch() {
-    getElementById('sort').addEventListener('click', async (e) => {
+    document.getElementById('sort').addEventListener('click', async (e) => {
         changeSortingButtonProperties(e.target);
-        renderPostsListAndPagination(await getData());
+        let posts = getSortedPosts(await getPosts(), e.target.dataset.sort);
+        renderPostsListAndPagination(posts);
     });
-}
 
-function activateSearchSwitch() {
-    getElementById('search').addEventListener('keyup', async (e) => {
-        renderPostsListAndPagination(await getData(e.target.value));
+    document.getElementById('search').addEventListener('keyup', async (e) => {
+        let posts = await getPosts();
+        posts = getSearchedPosts(posts, e.target.value);
+        renderPostsListAndPagination(posts);
     });
 }
 
@@ -29,46 +24,44 @@ function changeSortingButtonProperties(sortEl) {
     }
 }
 
-async function getData(search) {
+async function getPosts() {
     let rawData = await fetch('posts.json').then(raw => raw.json());
-    let data = rawData.filter(item => item.publish == 'true');
-    if (search) {
-        let newData = [];
-        let pattern = new RegExp(search, 'gi');
-        data.forEach((item) => {
-            if (item.title.search(pattern) !== -1) {
-                newData.push(item);
-            }
-        });
-        data = newData;
-    }
-    if (getElementById('sort').dataset.sort === 'descending') {
-        data = data.toSorted((a, b) => parseInt(a.id) < parseInt(b.id));
-    }
-    return data;
+    return rawData.filter(item => item.publish == 'true');
 }
 
-function renderPostsListAndPagination(data) {
+function getSearchedPosts(posts, search) {
+    let searchedPosts = [];
+    let pattern = new RegExp(search, 'gi');
+    posts.forEach((item) => {
+        if (item.title.search(pattern) !== -1) {
+            searchedPosts.push(item);
+        }
+    });
+    return searchedPosts;
+}
+
+function getSortedPosts(posts, sort) {
+    if (sort === 'descending') {
+        posts = posts.toSorted((a, b) => parseInt(a.id) < parseInt(b.id));
+    }
+    return posts;
+}
+
+function renderPostsListAndPagination(posts) {
     $('#pagination').pagination({
-        dataSource: data,
+        dataSource: posts,
         showSizeChanger: true,
         showNavigator: true,
         autoHideNext: true,
         autoHidePrevious: true,
-        // showGoInput: true,
-        // showGoButton: true,
         sizeChangerOptions: [5, 10, 20],
-        callback: function (data, pagination) {
+        callback: function (posts, pagination) {
             let html = '<ul>';
-            $.each(data, function (index, item) {
+            $.each(posts, function (index, item) {
                 html += `<li><a href="post.html?article=${item.link}">${item.title}</a></li>`;
             });
             html += '</ul>';
             $('#content').html(html);
         }
     });
-}
-
-function getElementById(id) {
-    return document.getElementById(id);
 }
